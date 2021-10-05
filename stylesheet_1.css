@@ -1,0 +1,67 @@
+* {
+    font-family: Arial;
+    background-color: #C4C4C4;
+  }
+
+
+/*styling of header*/
+.headerdiv{
+    float: left;
+    margin-bottom: 15px;
+    
+  }
+  
+.get_in {
+    position: relative ;
+    margin-left: 75%;    
+    top: 50px;
+}
+
+a {
+    font-family: Arial;
+    padding: 12px 40px;
+    color:black ;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 2px;
+    border-width: black 10px;
+    border-radius: 20px;
+    background-color: ivory;
+}
+
+  /*styling of line*/
+  hr{
+    width: 100%;
+    background-color: #000;
+    height: 1.5px;
+  }  
+
+  main{
+    margin-top: 50px;
+  }
+  
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      justify-content: center;
+      
+  }
+
+  .second_column {
+      margin-right: 20px 100px 0px 50px;
+      align-content: center;
+
+  }
+  img {
+      display: block;
+      
+  }
+  
+  /*
+  color: #E8EBED white for the main page log in 
+  */
+  
+
+  
