@@ -1,1 +1,66 @@
 
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login / Sign up form</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+        <h1 class="form_title">Login</h1>
+        <div class="form_message form_message_error"></div>
+        <div class="form_input_group">
+            <input type="text" class="form_input"autofocus placeholder="Username or email">
+            <div class="form_input_error_message"></div>
+        </div>
+        <div class="form_input_group">
+            <input type="password" class="form_input"autofocus placeholder="Password">
+            <div class="for_input_error_message"></div>
+        </div>
+        <button class="form_button" type="submit">Continue</button>
+        <p class="form_text">
+            <a href="#" class="form_link">Forgot your password?</a>
+        </p>
+        <p class="form_text">
+            <a  class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create an account.</a>
+        </p>
+    </form>
+    <form class="form form--hidden" id="createAccount">
+        <h1 class="form_title">Create account</h1>
+        <div class="form_message form_message_error"></div>
+        <div class="form_input_group">
+            <input type="text" id="signupUsername" class="form_input" autofocus placeholder="Username">
+        </div>
+              <div class="form_input_group">
+            <input type="text" id="firstname" class="form_input" autofocus placeholder="First Name">
+            <div class="form_input_error_message"></div>
+        </div>
+              <div class="form_input_group">
+            <input type="text" id="surname" class="form_input" autofocus placeholder="Surname">
+            <div class="form_input_error_message"></div>
+        </div>
+        <div class="form_input_group">
+            <input type="text" class="form_input"autofocus placeholder="Email address">
+            <div class="form_input_error_message"></div>
+        </div>
+        <div class="form_input_group">
+            <input type="password" class="form_input"autofocus placeholder="Password">
+            <div class="for_input_error_message"></div>
+        </div>
+        <div class="form_input_group">
+            <input type="password" class="form_input"autofocus placeholder="Confirm password">
+            <div class="for_input_error_message"></div>
+        </div>
+        <button class="form_button" type="submit">Continue</button>
+        <p class="form_text">
+            <a  class="form_link"  href="profile.html" id="linkLogin">Already have an account? Sign in</a>
+        </p>
+    </form>
+    </div>
+    <script src="./src/main.js"></script>
+</body>
