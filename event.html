@@ -11,29 +11,72 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-<link rel='stylesheet' href="./src/main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+      <link rel='stylesheet' href="./src/main.css">
 <script src="src/main.js" defer></script>
 </head>
-<body>
-    <header class="header">
-        <div class="u-centered">
-        </div>
-    </header>
-    <div class="bar">
-       <div class="bar__content u-centered">
-           <img class='bar__logo' src="src/logo.jpg" alt="logo">
-           <input type="checkbox" id="inpNavToggle">
-           <label class="bar__nav-toggle" for="inpNavToggle">
-               <i class="material-icons">menu</i>
-           </label>
-           <nav class="nav">
-               <a class="nav__link" href="calendar.html">Calendar</a>
-               <a class="nav__link" href="events.html">Events</a>
-               <a class="nav__link" href="contacts.html">Contacts</a>
-               <a class="nav__link" href="profile.html">Profile</a>
-           </nav>
-        </div>
+
+<header class="header">
+    <div class="u-centered">
     </div>
+</header>
+<div class="bar">
+   <div class="bar__content u-centered">
+       <img class='bar__logo' src="src/logo.jpg" alt="logo">
+       <input type="checkbox" id="inpNavToggle">
+       <label class="bar__nav-toggle" for="inpNavToggle">
+           <i class="material-icons">menu</i>
+       </label>
+       <nav class="nav">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link">|</a>
+        <a class="nav__link" href="calendar.html">Calendar</a>
+        <a class="nav__link">|</a>
+        <a class="nav__link" href="events.html">Events</a>
+        <a class="nav__link">|</a>
+        <a class="nav__link" href="contacts.html">Contacts</a>
+        <a class="nav__link">|</a>
+        <a class="nav__link" href="profile.html">Profile</a>
+       </nav>
+    </div>
+</div>
+<body>
+
+<!----Events page html-->
+<div class="events">
+    <h1 class="events__title">Your Events</h1>
+    <hr style="width:80%", size="3", color=white> 
+    <p class="events__description">
+    We can keep track of all your upcoming events right here to keep you organised! Here you can simply create sticky notes for upcoming events by simply clicking the plus button. To edit a note you tap the note once and to delete a note you double tap the note.  
+    </p>
+    <div id="app">
+        <button class="add-note" type="button">+</button>
+    </div>
+</div>
+<!----Events page html-->
+<!---- page layout html-->
+    <main>
+    
+</main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () =>{
+            const observer = new IntersectionObserver (entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 0.9)
+        
+
+            }, {
+                threshold:0.9
+            });
+
+            observer.observe(document.querySelector(".header"));
+
+        });
+
+    </script>
+</body>
+<!---- page layout html-->
 <!----Events page html-->
     <div id="app">
         <textarea class="note">Some sample text</textarea>
