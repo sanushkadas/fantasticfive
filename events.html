@@ -77,34 +77,3 @@
     </script>
 </body>
 <!---- page layout html-->
-<!----Events page html-->
-    <div id="app">
-        <textarea class="note">Some sample text</textarea>
-        <textarea class="note">Some sample text</textarea>
-        <textarea class="note">Some sample text</textarea>
-        <textarea class="note">Some sample text</textarea>
-        <button class="add-note" type="button">+</button>
-    </div>
-    <main>
-        
-
-
-
-
-</main>
-    <script>
-        document.addEventListener("DOMContentLoaded", () =>{
-            const observer = new IntersectionObserver (entries => {
-                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 0.9)
-        
-
-            }, {
-                threshold:0.9
-            });
-
-            observer.observe(document.querySelector(".header"));
-
-        });
-
-    </script>
-</body>
