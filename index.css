@@ -1,0 +1,42 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    
+}
+
+img {
+    border-left: 20px;
+    padding-left: 10px;
+    display: block;
+}
+
+.second_column {
+    margin-right: 50px;
+    align-content: center;
+
+}
+
+.action-button { 
+    overflow: hidden;
+    margin-top: 20px;
+    position: static;
+  }
+
+.index-link {
+    font-family: Arial;
+    padding: 12px;
+    height: 30px;
+    color:black ;
+    font-weight: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    background-color: inherit;
+} 
+
+.navbar a:hover {
+  background-color: white;
+  border-radius: 20px;
+}
