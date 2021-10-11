@@ -1,0 +1,119 @@
+.grid-container {
+    display: grid;
+    background: white;
+    border-radius: 20px;
+    height: auto;
+    border-style: solid;
+    grid-template-columns: 1fr 2fr ;
+    width: 1100px;
+    grid-template-areas: "panel1 panel2" ;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+#circle {
+    width: 160px;
+    height: 160px;
+    background: rgb(255, 227, 227);
+    border-radius: 50%;
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  .panel1 {
+    grid-area: panel1;
+    border-right: 4px solid black; 
+    position: relative;
+    padding-right: 10px;
+  }
+  
+  .panel2 {
+    grid-area: panel2;
+    padding-left: 10px;
+  }
+
+  .profile-text {
+      color: black;
+  }
+  
+  .edit-profile {
+      padding: 15px;
+      width: 200px;
+      color: rgb(138, 138, 138);
+  }
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: #a1a1a1;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  width: fit-content;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(255, 204, 204);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ee8fd9;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  color: black;
+}
+
+
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: match-parent;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+

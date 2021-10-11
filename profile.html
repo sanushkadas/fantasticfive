@@ -15,6 +15,8 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
       <link rel='stylesheet' href="./src/main.css">
+      <link rel="Stylesheet" href="profile.css">
+      <script src="profile.js"></script>
 <script src="src/main.js" defer></script>
 </head>
 
@@ -24,7 +26,7 @@
 </header>
 <div class="bar">
    <div class="bar__content u-centered">
-       <img class='bar__logo' src="src/logo.jpg" alt="logo">
+       <img class='bar__logo' src="src/logo.JPG" alt="logo">
        <input type="checkbox" id="inpNavToggle">
        <label class="bar__nav-toggle" for="inpNavToggle">
            <i class="material-icons">menu</i>
@@ -49,14 +51,91 @@
     <h1 class="profile__title">Your profile</h1>
     <hr style="width:80%", size="3", color=white> 
     <p class="profile__description">
-    description
+    Explore this section to view and modify your current wishlists. Feel free to also edit your profile for your family and friends to see!
     </p>
     
+    <div class="grid-container">
+        <div class= "panel1">
+        <h1 class= "profile-text">Welcome [user]! </h1>
+        <div id="circle"></div>
+            <img src="" height: width: alt="">
+            <h2 class= "profile-text">DOB: <h3 class= "profile-text">21/1/2001</h3> </h2>          
+            <h2 class= "profile-text">Hobbies/ interests:</h2>
+            <div class="list_hobbies">
+            <ul>
+                <li class= "profile-text"> Hiking</li>
+                <li class= "profile-text">Travelling</li>
+                <li class= "profile-text">Art</li>
+                <li class= "profile-text">Music</li>
+                <li class= "profile-text"> Camping</li>
+                <li class= "profile-text">Gaming</li>
+            </ul>
+            </div>
+        </div>
+        <div class="panel2">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, '1')">Wishlists</button>
+                <button class="tablinks" onclick="openTab(event, '2')">Hobbies & Interests</button>
+                <button class="tablinks" onclick="openTab(event, '3')">Profile picture</button>
+            </div>
+            
+              <div id="1" class="tabcontent">
+                <h3>Your wishlists:</h3>
+                <button class="accordion">My 20th Birthday:</button>
+                <div class="panel">
+                    <p>WANTS:</p>
+                    <ul>
+                        <li>puppy</li>
+                        <li>car</li>
+                        <li>camera</li>
+                    </ul>
+                        <input id="addToWishlist" placeholder="add new list item" />
+                        <button id="addButton">OK</button>
+                </div>
+
+                <button class="accordion">One year anniversary:</button>
+                <div class="panel">
+                    <ul>
+                        <li>Flowers</li>
+                    </ul>
+                    <input id="addToWishlist" placeholder="add new list item" />
+                    <button id="addButton">OK</button>
+                </div>
+
+                <div id="wishlist">
+                    <button class="edit-list" type="button">+</button>
+                </div>
+
+              </div>
+              
+              <div id="2" class="tabcontent">
+                <h3>Add your hobbies and interests:</h3>
+                <p>Playing guitar</p>
+                <p>Coding</p>
+                <p>Meditation</p>
+                    <input id="profileHobbyAdder" placeholder="Add new hobby / interest" />
+                    <button id="addButton">Add</button>
+              </div>
+              
+              <div id="3" class="tabcontent">
+                <h3>Profile Picture</h3>
+                    <button class="edit-profile">Add profile image</button>
+              </div>
+        
+
+        </div>
+        </div>
+
+    </div>
 </div>
+<br>
+<br>
+<br>
+   
 <!----Profile page html-->
 <!---- page layout html-->
     <main>
-    
+      
 </main>
     <script>
         document.addEventListener("DOMContentLoaded", () =>{
@@ -71,6 +150,28 @@
             observer.observe(document.querySelector(".header"));
 
         });
+
+    </script>
+    <script>
+          
+var acc = document.getElementsByClassName("accordion");
+var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+  
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
 
     </script>
 </body>
