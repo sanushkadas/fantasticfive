@@ -20,11 +20,16 @@ body{
     box-sizing: border-box;
 }
 
-.events, .contacts, .calendar, .profile, .home{
+.events, .contacts, .calendar, .home{
     margin-left: 50px;
     color: #fff;  
 }
 
+.profile {
+     color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 hr{
     border: 1px solid white;
     margin-top:10px;
