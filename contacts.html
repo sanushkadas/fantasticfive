@@ -14,8 +14,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/a57a97ef65.js" crossorigin="anonymous"></script>
       <link rel='stylesheet' href="./src/main.css">
-<script src="src/main.js" defer></script>
 </head>
 
 <header class="header">
@@ -51,6 +51,33 @@
     <p class="contacts__description">
     description
     </p>
+    <div class="cm-table-container" id="cmsTableContainer">
+        <div class="cm-table-row">
+            <div class="cm-table-column cm-name cm-header">Name</div>
+            <div class="cm-table-column cm-email cm-header">Email</div> <!---phone-->
+            <div class="cm-table-column cm-birthday cm-header">Birthday</div> <!---address-->
+            <div class="cm-table-column cm-header cm-add-entry" id="cmAddNewEntry">+</div>
+        </div>
+        <span id="tableBody"></span>
+    </div>
+    <div class="disable-modal" id="backdrop"></div>
+    <div class="disable-modal" id="newPersonModal">
+        <h1>Add Contact</h1>
+        <label for="newPersonName">Name</label>
+        <input type="text" id="newPersonName">
+
+        <label for="newPersonEmail">Email</label>
+        <input type="text" id="newPersonEmail">
+
+        <label for="newPersonBirthday">Birthday</label>
+        <input type="text" id="newPersonBirthday">
+
+        <button id="newCancelButton">Cancel</button>
+        <button id="newPersonSubmitButton">Submit</button>
+    </div>
+        <button id="SortButton" style="position: absolute; left: 0px; bottom: 0px;">Sort</button>
+        
+    <script src="src/contacts.js"></script>
     
 </div>
 <!----Contacts page html-->
