@@ -350,22 +350,22 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width:150px;
 }
 .cm-name{
-    flex-basis: 20%;
+    flex-basis: 100%;
     color:rgb(228, 98, 120);
 }
 
 .cm-email{
-    flex-basis: 20%;
+    flex-basis: 100%;
     color: rgb(228, 98, 120);
 }
 
 .cm-birthday{
-    flex-basis: 50%;
+    flex-basis: 100%;
     color:rgb(228, 98, 120);
 }
-
 .cm-header {
     background-color: rgb(255, 255, 255);
     font-weight: bolder;
@@ -373,8 +373,10 @@ body {
     text-align: center;
 }
 
+
+
 .cm-edit, .cm-delete{
-    flex-basis: 5%;
+    flex-basis: 20%;
     text-align: center;
     cursor: pointer;
     color:rgb(228, 98, 120);
