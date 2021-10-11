@@ -44,9 +44,11 @@ hr{
     color: #fff;
     font-size: 80px;
     margin-top: 30px;
-    margin-left: 445px;
+    margin-right: 20px;
+    margin-left: 10px;
     justify-content: center;
     margin-bottom: 0%;
+    text-align: center 
 }
 
 .bar{
@@ -178,9 +180,142 @@ hr{
     color: rgb(255, 255, 255);
     transition: background 0.2s;
     margin-left: 30px;
+    width: 200px;
 }
 
 .add-note:hover{
     background: rgba(0, 0, 0, 0.2);
 }
 
+
+
+/*calendar css*/
+
+body {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: #FFFCFF;
+  }
+  button {
+    width: 75px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(230, 159, 159);
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  #header {
+    padding: 10px;
+    color: #f7447a;
+    font-size: 26px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+  }
+  #header button {
+    background-color:#c95a85;
+  }
+  #container {
+    width: 770px;
+  }
+  #weekdays {
+    width: 100%;
+    display: flex;
+    color: #ff5379;
+  }
+  #weekdays div {
+    width: 100px;
+    padding: 10px;
+  }
+  #calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .day {
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: linear-gradient(to bottom right, var(--color-primary),var(--color-primary-light));
+    margin: 5px;
+    box-shadow: 0px 0px 6px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  .day:hover {
+    background-color: #fc7a80;
+  }
+  
+  .day + #currentDay {
+    background-color: #f5797f;
+  }
+  .event {
+    font-size: 12px;
+    padding: 3px;
+    background-color: #ff6600;
+    color: rgb(255, 253, 139);
+    border-radius: 5px;
+    max-height: 55px;
+    overflow: hidden;
+  }
+  .padding {
+    cursor: default !important;
+    background-color: linear-gradient(to bottom right, var(--color-primary),var(--color-primary-light)) !important;
+    box-shadow: 0px, 0px, 3px rgb(88, 88, 88) !important;
+  }
+  #newEventModal, #deleteEventModal {
+    display: none;
+    z-index: 20;
+    padding: 25px;
+    background-color:#f16477;
+    box-shadow: 0px 0px 3px rgb(88, 88, 88);
+    border-radius: 5px;
+    width: 350px;
+    top: 100px;
+    left: calc(50% - 175px);
+    position: absolute;
+    font-family: 'Quicksand',sans-serif;
+  }
+  #eventTitleInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+  #eventTitleInput.error {
+    border: 2px solid red;
+  }
+  #cancelButton, #deleteButton {
+    background-color: #d36c6c;
+    float:right;
+  }
+  #saveButton, #closeButton {
+    background-color: #92d1a7;
+  }
+  #eventText {
+    font-size: 14px;
+  }
+  #modalBackDrop {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    height: 130vh;
+    position: absolute;
+    background-color: rgba(54, 52, 52, 0.8);
+  }
