@@ -20,16 +20,11 @@ body{
     box-sizing: border-box;
 }
 
-.events, .contacts, .calendar, .home{
+.events, .contacts, .calendar, .profile, .home{
     margin-left: 50px;
     color: #fff;  
 }
 
-.profile {
-     color: #fff;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 hr{
     border: 1px solid white;
     margin-top:10px;
@@ -39,7 +34,7 @@ hr{
    justify-content: center;
    margin-left: 40px;
    margin-right: 40px;
-   font-size: 15px;
+   font-size: 20px;
 }
 
 
@@ -404,6 +399,9 @@ body {
     margin-left: calc(50% - 250);
     background-color: rgb(255, 138, 157);
     text-align: center;
+    justify-content: center;
+    margin-left: 400px;
+    margin-top: 200px;
 }
 
 #newPersonModal input{
@@ -419,7 +417,6 @@ body {
     outline-style: groove;
     outline-color: #ff0505;
 }
-
 
 #backdrop{
     width: 100%;
@@ -439,6 +436,10 @@ body {
 #newCancelButton{
     background-color: rgb(231, 77, 77);
     float: left;
+}
+
+#cmsTableContainer{
+    justify-content: center;
 }
 
 button{
