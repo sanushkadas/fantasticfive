@@ -415,8 +415,11 @@ body {
 }
 
 .input-err{
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+    outline-style: groove;
+    outline-color: #ff0505;
 }
+
 
 #backdrop{
     width: 100%;
